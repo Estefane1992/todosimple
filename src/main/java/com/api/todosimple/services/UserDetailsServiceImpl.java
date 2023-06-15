@@ -4,6 +4,7 @@ import java.util.Objects;
 import com.api.todosimple.models.User;
 import com.api.todosimple.repositores.UserRepository;
 import com.api.todosimple.security.UserSpringSecurity;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
