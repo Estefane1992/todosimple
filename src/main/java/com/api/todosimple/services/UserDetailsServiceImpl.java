@@ -25,5 +25,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return new UserSpringSecurity(user.getId(), user.getUsername(), user.getPassword(), user.getProfiles());
     }
 
-
 }

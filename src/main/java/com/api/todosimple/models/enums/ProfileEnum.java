@@ -1,9 +1,9 @@
 package com.api.todosimple.models.enums;
 
+import java.util.Objects;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-
-import java.util.Objects;
 
 @AllArgsConstructor
 @Getter
@@ -26,4 +26,5 @@ public enum ProfileEnum {
 
         throw new IllegalArgumentException("Invalid code: " + code);
     }
+
 }

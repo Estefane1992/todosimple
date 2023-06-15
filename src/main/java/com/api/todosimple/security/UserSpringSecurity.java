@@ -33,8 +33,6 @@ public class UserSpringSecurity implements UserDetails {
                 .collect(Collectors.toList());
     }
 
-
-
     @Override
     public boolean isAccountNonExpired() {
         return true;
@@ -56,8 +54,7 @@ public class UserSpringSecurity implements UserDetails {
     }
 
     public boolean hasRole(ProfileEnum profileEnum) {
-       return getAuthorities().contains(new SimpleGrantedAuthority(profileEnum.getDescription()));
+        return getAuthorities().contains(new SimpleGrantedAuthority(profileEnum.getDescription()));
     }
-
 
 }
